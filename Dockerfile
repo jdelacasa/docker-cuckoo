@@ -1,6 +1,8 @@
 FROM ubuntu:12.04
 MAINTAINER Jose Miguel de la Casa <nacicansao@gmail.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update
 RUN apt-get -y install git  python-pip gcc  build-essential python-dev
 RUN mkdir /home/workspace
