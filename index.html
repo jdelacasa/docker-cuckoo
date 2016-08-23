@@ -25,16 +25,22 @@
 <h2>
 <a id="build-image" class="anchor" href="#build-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build image</h2>
 
-<p>$ sudo docker build -t jdelacasa/docker-cuckoo .</p>
+<pre><code>$ sudo docker build -t jdelacasa/docker-cuckoo .
+</code></pre>
 
 <h2>
 <a id="run-image" class="anchor" href="#run-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run image</h2>
 
-<p>$ sudo docker run -d --privileged=true -p 2225:22 -p 2042:2042 -p 9001:9001 -p 8080:8080 jdelacasa/docker-cuckoo
-** Fix perm</p>
+<pre><code>$ sudo docker run -d --privileged=true -p 2225:22 -p 2042:2042 -p 9001:9001 -p 8080:8080 jdelacasa/docker-cuckoo
+</code></pre>
 
-<p>$ ssh localhost -p 2225 (user:root/pass:temporal)
-$ chown -R www-data /var/www</p>
+<p>** Fix perm</p>
+
+<pre><code>$ ssh localhost -p 2225 (user:root/pass:temporal)
+
+
+$ chown -R www-data /var/www
+</code></pre>
 
 <p>Ok.</p>
 

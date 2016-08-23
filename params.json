@@ -1,6 +1,6 @@
 {
   "name": "Docker-cuckoo",
   "tagline": "docker + mongo + ssh + cuckoo + virtualbox",
-  "body": "docker-cuckoo\r\n===================\r\n\r\n## Build image\r\n$ sudo docker build -t jdelacasa/docker-cuckoo .\r\n\r\n\r\n## Run image \r\n\r\n$ sudo docker run -d --privileged=true -p 2225:22 -p 2042:2042 -p 9001:9001 -p 8080:8080 jdelacasa/docker-cuckoo\r\n** Fix perm\r\n\r\n\r\n$ ssh localhost -p 2225 (user:root/pass:temporal)\r\n$ chown -R www-data /var/www\r\n\r\n\r\nOk.",
+  "body": "docker-cuckoo\r\n===================\r\n\r\n## Build image\r\n    $ sudo docker build -t jdelacasa/docker-cuckoo .\r\n\r\n\r\n## Run image \r\n\r\n    $ sudo docker run -d --privileged=true -p 2225:22 -p 2042:2042 -p 9001:9001 -p 8080:8080 jdelacasa/docker-cuckoo\r\n\r\n** Fix perm\r\n\r\n\r\n    $ ssh localhost -p 2225 (user:root/pass:temporal)\r\n\r\n\r\n    $ chown -R www-data /var/www\r\n\r\n\r\nOk.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
